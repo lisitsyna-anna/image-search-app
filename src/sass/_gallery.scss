@@ -1,0 +1,51 @@
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.info {
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.info-item {
+  text-align: center;
+}
+
+.photo-card-link {
+  width: calc((100% - 2 * 20px) / 3);
+  box-shadow: 9px 9px 16px -12px rgba(66, 68, 90, 1);
+}
+
+.photo-card {
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  display: flex;
+}
+
+.photo {
+  height: 80%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.load-more {
+  display: block;
+  margin-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  cursor: pointer;
+  width: 100px;
+  padding: 4px;
+}
